@@ -1,7 +1,7 @@
-var os = require('os');
+//var os = require('os');
 var OSinfo = require('../modules/OSInfo');
-var ConvertTimeMinutes = require('../modules/ConvertTimeMinutes');
-var ConvertTimeHours = require('../modules/ConvertTimeHours');
+var timeConverter = require('../modules/timeConverter');
+//var timeConverterHours = require('../modules/timeConverterHours');
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
@@ -19,12 +19,12 @@ process.stdin.on('readable', function() {
             case '/getOSinfo':
                 OSinfo.print();
                 break;
-            case '/getConvertTimeMinutes':
-                ConvertTimeMinutes.print();
+            case '/getTimeConverter':
+                timeConverter.print();
                 break;
-            case '/getConvertTimeHours':
-                ConvertTimeHours.print();
-                break;
+            // case '/getTimeConverterHours':
+            //     timeConverterHours.print();
+            //     break;
             default:
                 process.stderr.write('Wrong instruction!\n');
         };

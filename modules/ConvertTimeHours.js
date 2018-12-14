@@ -1,6 +1,4 @@
-var os = require('os');
-
-function getConvertTimeHours() {
+function getTimeConverterHours() {
     var time = 3700;
     var hours = Math.floor(time / 3600);
     var minutes = Math.floor(time / 60);
@@ -9,4 +7,4 @@ function getConvertTimeHours() {
     console.log('Time: ', hours, 'hours ', minutes, 'min ', seconds, 's');
 }
 
-exports.print = getConvertTimeHours;
+exports.print = getTimeConverterHours;

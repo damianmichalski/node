@@ -1,6 +1,4 @@
-var os = require('os');
-
-function getConvertTimeMinutes() {
+function getTimeConverterMinutes() {
     var time = 125;
 
     var minutes = Math.floor(time / 60);
@@ -9,5 +7,5 @@ function getConvertTimeMinutes() {
     console.log('Time: ', minutes, 'min ', seconds, 's');
 }
 
-exports.print = getConvertTimeMinutes;
+exports.print = getTimeConverterMinutes;
 
