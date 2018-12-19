@@ -1,7 +1,6 @@
-//var os = require('os');
+
 var OSinfo = require('./modules/OSInfo');
-var timeConverter = require('./modules/timeConverter');
-//var timeConverterHours = require('../modules/timeConverterHours');
+
 
 process.stdin.setEncoding('utf-8');
 process.stdin.on('readable', function() {
